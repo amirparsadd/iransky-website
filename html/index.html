@@ -5,17 +5,31 @@
     <title>IranSky</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @font-face {
+            font-family: main-font;
+            src: url("http://localhost/static/font-mikhak.ttf");
+        }
+
+        body {
+            font-family: main-font;
+        }
+
+        .rtl {
+            direction: rtl;
+        }
+
         .center {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 10px;
+            text-align: center;
         }
 
         .center-right {
-            float: right;
-            width: 300px;
+            justify-content: center;
+            display: flex;
         }
 
         .align-horizontal {
@@ -24,8 +38,17 @@
             flex-wrap: wrap;
         }
 
-        .link-icon {
-            width: 5rem;
+        .discord {
+            color: #3e3d88;
+        }
+
+        .donate {
+            color: #91ac31;
+        }
+
+        .icon-link {
+            margin-left: 5px;
+            margin-right: 5px;
         }
         
         a {
@@ -38,10 +61,11 @@
 </head>
 <body>
     <div class="center">
-        <h1>وبسایت در دسترس نیست</h1>
-        <h2>در حال حاظر ساخت وبسایت کامل نشده. لطفا شکیبا باشید</h2>
+        <h1 class="rtl" >وبسایت در دسترس نیست</h1>
+        <h2 class="rtl" >در حال حاظر ساخت وبسایت کامل نشده. لطفا شکیبا باشید</h2>
         <div class="align-horizontal center-right">
-            <a class="fab fa-discord link-icon" href="https://discord.gg/mc8mXd5QMF"></a>
+            <a class="fab fa-discord discord icon-link fa-2xl" href="https://discord.gg/mc8mXd5QMF"></a>
+            <a class="fas fa-coins donate fa-2xl icon-link" href="redirect/donate"></a>
         </div>
     </div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
