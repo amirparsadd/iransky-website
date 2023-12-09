@@ -31,4 +31,4 @@ def redirect(id):
         return open(file="./html/404.html", encoding="utf8")
   
 if __name__=='__main__': 
-   app.run(port=80)
+   app.run(port=80,host="0.0.0.0")
