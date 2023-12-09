@@ -1,5 +1,6 @@
 from flask import Flask     
 app = Flask(__name__)
+redirect_ids = {"donate":"https://iranskymc.ir.page"}
 
 @app.route("/")
 def index(): 
@@ -22,6 +23,12 @@ def asset(asset_id):
     except:
         return open(file="./html/404.html", encoding="utf8")
 
+@app.route("/redirect/<id>")
+def redirect(id):
+    try:
+        return app.redirect(redirect_ids.get(id))
+    except:
+        return open(file="./html/404.html", encoding="utf8")
   
 if __name__=='__main__': 
    app.run(port=80)
