@@ -1,6 +1,6 @@
 from flask import Flask     
 app = Flask(__name__)
-redirect_ids = {"donate":"https://iranskymc.ir.page", "discord":"https://discord.gg/HP4AGpkHkh"}
+redirect_ids = {"donate":"about:blank", "discord":"https://discord.gg/HP4AGpkHkh"}
 
 @app.route("/")
 def index(): 

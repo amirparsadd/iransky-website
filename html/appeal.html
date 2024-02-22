@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IranSky</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: main-font;
+            src: url("/static/font-mikhak.ttf");
+        }
+
+        body {
+            font-family: main-font;
+            color: white;
+            background: url("/static/appeal_back.png");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: fixed;
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .rtl {
+            direction: rtl;
+        }
+
+        .center {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            padding: 10px;
+            text-align: center;
+            width: 95%;
+        }
+
+        .center-right {
+            justify-content: center;
+            display: flex;
+        }
+
+        .align-horizontal {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .container{
+            backdrop-filter: blur(10px);
+            padding: 1.5em;
+            margin: 2em;
+            border-radius: 7rem;
+            box-shadow: 2px 1px 5px black;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: black;
+        }
+
+        .btn {
+            background-color: #5352aa;
+            border-radius: 0.7rem;
+            box-shadow: 2px 1px 5px black;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 17pt;
+            font-style: oblique;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #6f6dc8;
+        }
+
+        .forum {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .forum-input {
+            display: flex;
+            flex-direction: row;
+            -ms-flex-direction: row;
+            justify-content: center;
+            margin: 1rem;
+        }
+
+        .forum-input-text {
+            font-size: large;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <noscript>IranSky Needs A Brain To Work So Please Enable Javascript</noscript>
+    <div class="center main">
+        <div class="container">
+            <h1>بن شده اید؟</h1>
+            <p style="font-size: 14pt;">آیا شما بدون دلیل یا هشداری از سرور بن شده اید؟ می توانید با باز کردن تیکت در دیسکورد یا کلیک بر روی گزینه 
+                درخواست رفع بن 
+                محدودیت خود را از بین ببرید و به بازی کردن ادامه دهید
+            </p>
+
+            <div class="forum">
+                <div class="forum-input">
+                    <p class="forum-input-text">نام شما در بازی</p>
+                    <input type="text" name="نام شما در بازی" id="IngameNameInput" class="forum-input-box" required>
+                </div>
+                <div class="forum-input">
+                    <p class="forum-input-text">توضیحات</p>
+                    <input type="text" name="توضیحات" id="DetailsInput" class="forum-input-box" required>
+                </div>
+                <div class="forum-input">
+                    <p class="forum-input-text">آیا بن داعم است</p>
+                    <input type="checkbox" name="آیا بن داعم است" id="PermaInput" class="forum-input-box" required>
+                </div>
+
+                <i class="forum-input-text">آقا حوصله ندارم فلن بزنید رو دکمه پایین ایمیل بدین</i>
+            </div>
+
+            <a href="mailto:iransky.ent@gmail.com" class="btn">درخواست رفع بن</a>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
